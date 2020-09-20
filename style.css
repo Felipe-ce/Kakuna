@@ -1,0 +1,47 @@
+/* Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/* Header */
+.header {
+  background: #c8c2c2;
+}
+.header-container img {
+  max-width: 140px;
+}
+.header-container {
+  padding: 10px 0;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+}
+.menu li {
+  margin-left: 20px;
+}
+.menu a {
+  font-family: "Avenir";
+  color: #302d3d;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
