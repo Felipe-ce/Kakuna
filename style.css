@@ -87,6 +87,7 @@ body{
   opacity: .6;
 }
 
+
 /* Intro */
 .intro{
   background: url(img/predios-kakuna.jpg) no-repeat center;
@@ -143,4 +144,24 @@ body{
   background: var(--cor-destaque);
   margin-right: 10px;
   border-radius: 10px;
+}
+
+/* Depoimento */
+.depoimento{
+  height: 400px;
+  background-color: var(--cor-titulo);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.depoimento p{
+  font: 2em var(--titulo);
+  max-width: 800px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+}
+.depoimento cite{
+  color: var(--cor-destaque);
+  display: block;
 }
