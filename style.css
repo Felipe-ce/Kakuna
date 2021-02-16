@@ -62,7 +62,7 @@ body {
   max-width: 140px;
 }
 .header-container {
-  padding: 10px 0;
+  padding: 10px;
   max-width: 960px;
   margin: 0 auto;
   display: grid;
@@ -88,6 +88,11 @@ body {
 }
 .menu a:hover {
   opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 /* Intro */
@@ -121,7 +126,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
-  padding: 80px 0;
+  padding: 80px 10px;
 }
 .quem-somos img {
   grid-column: 1;
@@ -145,6 +150,16 @@ body {
   background: var(--cor-destaque);
   margin-right: 10px;
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .quem-somos {
+    grid-template-columns: auto;
+  }
+  .quem-somos img {
+    grid-column: auto;
+    grid-row: auto;
+    width: 180px;
+  }
 }
 
 /* Depoimento */
@@ -233,4 +248,5 @@ body {
 }
 .footer p {
   color: #fff;
+  font-size: 0.875em;
 }
