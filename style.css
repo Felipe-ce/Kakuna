@@ -54,7 +54,6 @@ body {
   margin-bottom: 15px;
 }
 
-
 /* Header */
 .header {
   background: #c8c2c2;
@@ -224,4 +223,14 @@ body {
   .btn {
     grid-column: auto;
   }
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  background: var(--cor-titulo);
+}
+.footer p {
+  color: #fff;
 }
