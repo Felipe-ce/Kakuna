@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&family=Noto+Sans+JP&display=swap");
+
+/* font-family: 'Newsreader', serif;
+font-family: 'Noto Sans JP', sans-serif; */
+
+:root {
+  --titulo: "Newsreader", serif;
+  --corpo: "Noto Sans JP", sans-serif;
+  --cor-titulo: #302d3d;
+  --cor-corpotxt: #5b5a5f;
+  --container-width: 960px;
+  --cor-destaque: #fabb85;
+}
+
+/* Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font: 1em var(--corpo);
+  color: var(--cor-corpotxt);
+}
+
+/* Gerais */
+.titulo {
+  /* font-style | font-variant | font-weight | font-size | font-family */
+  font: bold 3em var(--titulo);
+  color: var(--cor-titulo);
+}
+.titulo::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 120px;
+  background: var(--cor-destaque);
+  margin-top: 5px;
+}
+.subtitulo {
+  color: var(--cor-titulo);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Header */
+.header {
+  background: #c8c2c2;
+}
+.header-container img {
+  max-width: 140px;
+}
+.header-container {
+  padding: 10px 0;
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 20px;
+}
+.menu ul {
+  display: flex;
+  padding: 10px 0;
+}
+.menu li {
+  margin-left: 20px;
+}
+.menu a {
+  font-family: var(--corpo);
+  color: #302d3d;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  transition: opacity 100ms ease-in;
+}
+.menu a:hover {
+  opacity: 0.6;
+}
+
+/* Intro */
+.intro {
+  background: url(img/predios-kakuna.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+  display: grid;
+  align-content: center;
+}
+.intro h1 {
+  font: bold 3em var(--titulo);
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.intro h1::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 120px;
+  background: #fff;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+/* Quem somos */
+.quem-somos {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 80px 0;
+}
+.quem-somos img {
+  grid-column: 1;
+  grid-row: span 3;
+  opacity: 0.3;
+}
+.quem-somos p {
+  max-width: 530px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.quem-somos ul li {
+  font: bold 1.125em var(--titulo);
+  margin-bottom: 10px;
+}
+.quem-somos ul li::before {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: var(--cor-destaque);
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+/* Depoimento */
+.depoimento {
+  height: 400px;
+  background-color: var(--cor-titulo);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.depoimento p {
+  font: 2em var(--titulo);
+  max-width: 800px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+}
+.depoimento cite {
+  color: var(--cor-destaque);
+  display: block;
+  text-align: center;
+}
+.depoimento cite::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: var(--cor-destaque);
+  margin: 10px auto 0 auto;
+  opacity: 0.8;
+}
+
+/* servicos */
+.servicos {
+  max-width: 1144px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* essa linha ja deixa ersponsivo
+  grid-template-columns: repeat(auto-fit, minmax(290px, 300px)); */
+  gap: 20px;
+  height: 400px;
+  justify-content: center;
+  align-content: center;
+}
+
+.servicos-item img {
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.servicos-item {
+  padding: 20px;
+  text-align: center;
+  font-size: 0.875em;
+}
+.btn {
+  grid-column: 2;
+  color: var(--cor-titulo);
+  padding: 10px 5px;
+  border: solid 3px var(--cor-titulo);
+  max-width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font: 1em var(--titulo);
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .servicos {
+    grid-template-columns: minmax(200px, 310px);
+    height: auto;
+    padding: 40px 0;
+  }
+  .btn {
+    grid-column: auto;
+  }
+}

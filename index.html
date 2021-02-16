@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Kakuna</title>
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <img src="img/marca-kakuna.png" alt="Logo" />
+    <header class="header">
+      <div class="header-container">
+        <a href="#">
+          <img src="img/marca-kakuna.png" alt="Logo" />
+        </a>
 
-      <nav>
-        <ul>
-          <li><a href="#">sobre</a></li>
-          <li><a href="#">Serviços</a></li>
-        </ul>
-      </nav>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section>
@@ -24,24 +30,24 @@
     <!-- Quem somos -->
     <section>
       <img src="img/simbolo-kakuna.png" alt="Logo" />
-      <h2>Quem Somos</h2>
-      <p>
-        Sua ilusão tinha-se projetado além dela, além de tudo. Ela lançara-se ao
-        seu sonho com uma paixão criadora, acrescentando-lhe incessantemente
-        alguma coisa, enfeitando-o com todas as vigorosas plumagens com que
-        deparava. Quantidade alguma de ardor ou de entusiasmo pode competir com
-        aquilo que um homem pode armazenar em seu fantasmagórico coração.
-      </p>
-      <ul>
-        <li>Mais de 30 anos de mercado</li>
-        <li>Temos 400 prédios construídos</li>
-        <li>Faturamos mais de 100 milhões por ano</li>
-        <li>Estamos presentes em 60 países</li>
-      </ul>
+        <h2 class="titulo">Quem Somos</h2>
+        <p>
+          Sua ilusão tinha-se projetado além dela, além de tudo. Ela lançara-se ao
+          seu sonho com uma paixão criadora, acrescentando-lhe incessantemente
+          alguma coisa, enfeitando-o com todas as vigorosas plumagens com que
+          deparava. Quantidade alguma de ardor ou de entusiasmo pode competir com
+          aquilo que um homem pode armazenar em seu fantasmagórico coração.
+        </p>
+        <ul>
+          <li>Mais de 30 anos de mercado</li>
+          <li>Temos 400 prédios construídos</li>
+          <li>Faturamos mais de 100 milhões por ano</li>
+          <li>Estamos presentes em 60 países</li>
+        </ul>
     </section>
 
     <!-- Depoimento -->
-    <section>
+    <section class="depoimento">
       <blockquote>
         <p>
           Quantidade alguma de ardor ou de entusiasmo pode competir com aquilo
@@ -52,34 +58,35 @@
     </section>
 
     <!-- Serviços -->
-    <section>
-      <div>
+    <section class="servicos">
+      <div class="servicos-item">
         <img src="img/construcoes-kakuna.png" alt="Construções" />
-        <h3>Construções</h3>
+        <h3 class="subtitulo">Construções</h3>
         <p>
           Quantidade alguma de ardor ou de entusiasmo pode competir com aquilo
           que um homem pode armazenar em seu fantasmagórico coração.
         </p>
       </div>
 
-      <div>
+      <div class="servicos-item">
         <img src="img/mansoes-kakuna.png" alt="Mansões" />
-        <h3>Mansõe</h3>
+        <h3 class="subtitulo">Mansõe</h3>
         <p>
           Quantidade alguma de ardor ou de entusiasmo pode competir com aquilo
           que um homem pode armazenar em seu fantasmagórico coração.
         </p>
       </div>
 
-      <div>
+      <div class="servicos-item">
         <img src="img/castelos-kakuna.png" alt="Castelos" />
-        <h3>castelos</h3>
+        <h3 class="subtitulo">Castelos</h3>
         <p>
           Quantidade alguma de ardor ou de entusiasmo pode competir com aquilo
           que um homem pode armazenar em seu fantasmagórico coração.
         </p>
       </div>
-      <a href="#">Fale conosco</a>
+      <a class="btn" href="#">Fale conosco</a>
     </section>
+  </main>
   </body>
 </html>
